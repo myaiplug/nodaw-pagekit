@@ -10,7 +10,7 @@ NoDAW Labs changes on top of upstream:
 - `src/admin/admin.js`, `scripts/dev-server.mjs`: keep `actions` and page `meta` when the local editor saves.
 - `scripts/build.mjs`: `meta` placeholders and a `--no-admin` flag for public deploy builds (no admin pages, no admin link/script, no `kit/admin` bundle).
 - `src/nodaw-theme.css`: solid backdrop on the sticky brand bar.
-- `public/robots.txt`, `public/sitemap.xml`, `public/favicon.*`, `vercel.json` (root and `/admin/*` redirect to the page).
+- `public/robots.txt`, `public/sitemap.xml`, `public/favicon.*`, `vercel.json` (root redirects to the page; no admin routes are deployed).
 
 Product facts on `public/pages/liminal-pro.json` come only from https://liminal-stemsplit.onrender.com and the two
 Gumroad listings (Pro $29: https://nodaw.gumroad.com/l/LiminalPro, free demo: https://nodaw.gumroad.com/l/Liminal).

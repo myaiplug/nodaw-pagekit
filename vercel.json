@@ -6,7 +6,10 @@
   "installCommand": "true",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/", "destination": "/liminal-pro/", "permanent": false },
-    { "source": "/admin/:path*", "destination": "/liminal-pro/", "permanent": false }
+    {
+      "source": "/",
+      "destination": "/liminal-pro/",
+      "permanent": false
+    }
   ]
 }

@@ -6,7 +6,7 @@ NoDAW Labs product pages, built on [wavey-ai/pagekit](https://github.com/wavey-a
 - Pages are JSON files in `public/pages/<slug>.json`; media lives in `public/assets/pages/<slug>/`.
 - Page `meta` supports `robots`, `canonical`, `siteName`, `ogImage` (absolute URL), `ogImageWidth`, `ogImageHeight`, `ogImageAlt`, `brand`, `brandHref`. Sections can carry `actions` (`{ label, href, style: "primary" | "secondary", note }`).
 - `npm run dev` runs the local editor at `http://localhost:5179/admin/<slug>/` (dev server only).
-- Production (Vercel) runs `npm run build:deploy` (`--no-admin`), which removes the editor link, the editor script and the admin bundle, and `/admin/*` redirects to the page.
+- Production (Vercel) runs `npm run build:deploy` (`--no-admin`), which removes the editor link, the editor script and the admin bundle, so `/admin/*` is not deployed (404). `/` redirects to the first page.
 
 ---
 
