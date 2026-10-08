@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="%PAGE_DESCRIPTION%">
+  <meta name="robots" content="%PAGE_ROBOTS%">
+  <link rel="canonical" href="%PAGE_CANONICAL%">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="%PAGE_SITE_NAME%">
+  <meta property="og:url" content="%PAGE_CANONICAL%">
+  <meta property="og:title" content="%PAGE_TITLE%">
+  <meta property="og:description" content="%PAGE_DESCRIPTION%">
+  <meta property="og:image" content="%PAGE_OG_IMAGE%">
+  <meta property="og:image:width" content="%PAGE_OG_IMAGE_WIDTH%">
+  <meta property="og:image:height" content="%PAGE_OG_IMAGE_HEIGHT%">
+  <meta property="og:image:alt" content="%PAGE_OG_IMAGE_ALT%">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="%PAGE_TITLE%">
+  <meta name="twitter:description" content="%PAGE_DESCRIPTION%">
+  <meta name="twitter:image" content="%PAGE_OG_IMAGE%">
+  <meta name="twitter:image:alt" content="%PAGE_OG_IMAGE_ALT%">
+  <title>%PAGE_TITLE%</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/kit/page-template.css">
+  <link rel="stylesheet" href="/kit/nodaw-theme.css">
+</head>
+<body class="lpk-page nodaw-page">
+  <header class="lpk-topbar">
+    <a class="lpk-brand" href="%PAGE_BRAND_HREF%">%PAGE_BRAND%</a>
+    <!--LPK_ADMIN--><a class="lpk-admin-link" href="/admin/%PAGE_SLUG%/" hidden>Edit</a><!--/LPK_ADMIN-->
+  </header>
+  <main class="lpk-main" data-lpk-page="%PAGE_SLUG%">
+    <div class="lpk-section-list" data-lpk-sections></div>
+  </main>
+  <footer class="nodaw-footer">
+    <p>© 2026 NoDAW™ Labs · Page template: uses <a href="https://github.com/wavey-ai/pagekit" rel="noopener">pagekit</a> by wavey-ai (MIT)</p>
+  </footer>
+  <!--LPK_ADMIN--><script>
+    // The local admin editor only exists on the dev server.
+    if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.querySelector(".lpk-admin-link").hidden = false;
+  </script><!--/LPK_ADMIN-->
+  <script type="module" src="/kit/page-renderer.js"></script>
+</body>
+</html>

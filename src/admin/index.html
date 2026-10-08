@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pagekit admin</title>
+  <link rel="stylesheet" href="/kit/page-template.css">
+  <link rel="stylesheet" href="/kit/admin/admin.css">
+</head>
+<body class="lpk-admin-page">
+  <header class="lpk-admin-head">
+    <a class="lpk-admin-logo" href="/">pagekit</a>
+    <div>
+      <p>local admin</p>
+      <h1>Edit <span data-admin-page-name>page</span></h1>
+    </div>
+    <div class="lpk-admin-actions">
+      <a class="lpk-admin-button" data-preview-link href="/" target="_blank" rel="noreferrer">Preview</a>
+      <button class="lpk-admin-button" id="lpk-add-section" type="button">Add section</button>
+      <button class="lpk-admin-button" id="lpk-save" type="button">Save</button>
+    </div>
+  </header>
+
+  <main class="lpk-admin-shell">
+    <p id="lpk-status" class="lpk-status" role="status">Loading page JSON...</p>
+    <section class="lpk-page-card">
+      <div class="lpk-field-grid">
+        <label>
+          <span>Page title</span>
+          <input id="lpk-page-title" type="text">
+        </label>
+        <label>
+          <span>Description</span>
+          <input id="lpk-page-description" type="text">
+        </label>
+      </div>
+    </section>
+    <div id="lpk-sections" class="lpk-sections"></div>
+  </main>
+
+  <template id="lpk-section-template">
+    <section class="lpk-section-card">
+      <div class="lpk-section-head">
+        <strong class="lpk-section-title">Section</strong>
+        <div>
+          <button class="lpk-admin-button lpk-move-up" type="button">Up</button>
+          <button class="lpk-admin-button lpk-move-down" type="button">Down</button>
+          <button class="lpk-admin-button lpk-remove-section" type="button">Remove</button>
+        </div>
+      </div>
+      <div class="lpk-field-grid">
+        <label>
+          <span>Headline</span>
+          <input class="lpk-headline-input" type="text">
+        </label>
+        <label>
+          <span>Photo credit</span>
+          <input class="lpk-photo-credit-input" type="text">
+        </label>
+      </div>
+      <label>
+        <span>Lede</span>
+        <textarea class="lpk-lede-input" rows="3"></textarea>
+      </label>
+      <label>
+        <span>Long-form body</span>
+        <textarea class="lpk-body-input" rows="8" placeholder="Blank lines create paragraphs. Use **bold**, *emphasis*, ==highlight==, and ### subsection headings."></textarea>
+      </label>
+      <div class="lpk-section-images">
+        <div class="lpk-section-head">
+          <strong>Section images</strong>
+          <button class="lpk-admin-button lpk-add-section-image" type="button">Add image</button>
+        </div>
+        <div class="lpk-section-image-list"></div>
+      </div>
+      <div class="lpk-bullets-editor">
+        <div class="lpk-section-head">
+          <strong>Bullets</strong>
+          <button class="lpk-admin-button lpk-add-bullet" type="button">Add bullet</button>
+        </div>
+        <div class="lpk-bullet-list"></div>
+      </div>
+      <div class="lpk-series-editor-wrap">
+        <div class="lpk-section-head">
+          <strong>Series grid</strong>
+          <button class="lpk-admin-button lpk-toggle-series" type="button">Add series grid</button>
+        </div>
+        <div class="lpk-series-editor" hidden>
+          <div class="lpk-field-grid">
+            <label>
+              <span>Rows</span>
+              <input class="lpk-series-rows" type="number" min="1" max="6" step="1">
+            </label>
+            <label class="lpk-file-field">
+              <span>Import images</span>
+              <input class="lpk-series-bulk-file" type="file" accept="image/*" multiple>
+            </label>
+          </div>
+          <button class="lpk-admin-button lpk-add-series-image" type="button">Add image</button>
+          <div class="lpk-series-image-list"></div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="lpk-bullet-template">
+    <article class="lpk-subcard" data-type="text">
+      <div class="lpk-card-controls">
+        <select class="lpk-bullet-type">
+          <option value="text">Text</option>
+          <option value="image">Square image</option>
+        </select>
+        <button class="lpk-admin-button lpk-remove-bullet" type="button">Remove</button>
+      </div>
+      <div class="lpk-bullet-text-wrap">
+        <label>
+          <span>Text</span>
+          <textarea class="lpk-bullet-text" rows="3"></textarea>
+        </label>
+        <div class="lpk-icon-row">
+          <label>
+            <span>Icon</span>
+            <select class="lpk-bullet-icon"></select>
+          </label>
+          <span class="lpk-icon-preview" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="lpk-bullet-image-wrap">
+        <div class="lpk-preview lpk-square-preview">
+          <img class="lpk-bullet-image-preview" alt="">
+        </div>
+        <label class="lpk-file-field">
+          <span>Square image, saved as 576x576; PNG stays PNG</span>
+          <input class="lpk-bullet-file" type="file" accept="image/*">
+        </label>
+        <label>
+          <span>Alt text</span>
+          <input class="lpk-bullet-alt" type="text">
+        </label>
+      </div>
+    </article>
+  </template>
+
+  <template id="lpk-section-image-template">
+    <article class="lpk-subcard">
+      <div class="lpk-card-controls">
+        <strong class="lpk-section-image-title">Image</strong>
+        <div>
+          <button class="lpk-admin-button lpk-section-image-up" type="button">Up</button>
+          <button class="lpk-admin-button lpk-section-image-down" type="button">Down</button>
+          <button class="lpk-admin-button lpk-remove-section-image" type="button">Remove</button>
+        </div>
+      </div>
+      <div class="lpk-image-row">
+        <div class="lpk-preview lpk-section-image-preview-frame">
+          <img class="lpk-section-image-preview" alt="">
+        </div>
+        <label>
+          <span>Shape</span>
+          <select class="lpk-section-image-format">
+            <option value="portrait">9:16 portrait</option>
+            <option value="square">Square</option>
+            <option value="wide">16:10 wide</option>
+          </select>
+        </label>
+        <label class="lpk-file-field">
+          <span>Image, cropped before save</span>
+          <input class="lpk-section-image-file" type="file" accept="image/*">
+        </label>
+        <label>
+          <span>Alt text</span>
+          <input class="lpk-section-image-alt" type="text">
+        </label>
+      </div>
+    </article>
+  </template>
+
+  <template id="lpk-series-image-template">
+    <article class="lpk-subcard">
+      <div class="lpk-card-controls">
+        <strong class="lpk-series-image-title">Image</strong>
+        <div>
+          <button class="lpk-admin-button lpk-series-image-up" type="button">Up</button>
+          <button class="lpk-admin-button lpk-series-image-down" type="button">Down</button>
+          <button class="lpk-admin-button lpk-remove-series-image" type="button">Remove</button>
+        </div>
+      </div>
+      <div class="lpk-series-image-row">
+        <div class="lpk-preview lpk-square-preview">
+          <img class="lpk-series-image-preview" alt="">
+        </div>
+        <label class="lpk-file-field">
+          <span>Series image, saved as 576x576; PNG stays PNG</span>
+          <input class="lpk-series-image-file" type="file" accept="image/*">
+        </label>
+        <label>
+          <span>Alt text</span>
+          <input class="lpk-series-image-alt" type="text">
+        </label>
+      </div>
+    </article>
+  </template>
+
+  <script type="module" src="/kit/admin/admin.js"></script>
+</body>
+</html>

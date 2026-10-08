@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://nodaw-pagekit.vercel.app/sitemap.xml

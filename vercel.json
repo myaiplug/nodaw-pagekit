@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node scripts/build.mjs --no-admin",
+  "outputDirectory": "dist",
+  "framework": null,
+  "installCommand": "true",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/", "destination": "/liminal-pro/", "permanent": false },
+    { "source": "/admin/:path*", "destination": "/liminal-pro/", "permanent": false }
+  ]
+}
