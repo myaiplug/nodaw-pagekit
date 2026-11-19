@@ -1,7 +1,7 @@
 {
   "version": 1,
   "title": "Liminal Pro — local AI stem separation for Windows · $29 one-time",
-  "description": "Liminal Pro separates vocals, drums, bass, piano, guitar and other on your own Windows PC. Five AI engines, up to six stems, batch processing, an 18-module FX rack per stem. $29 one-time.",
+  "description": "Liminal Pro separates vocals, drums, bass, piano, guitar and other on your own Windows PC. Five AI engines, up to six stems, batch processing, a 14-module FX rack per stem. $29 one-time.",
   "meta": {
     "robots": "index,follow",
     "brand": "NoDAW™ Labs · Liminal",
@@ -41,7 +41,7 @@
         },
         {
           "type": "text",
-          "text": "$29 one-time: lifetime license, free updates",
+          "text": "$29 one-time, no subscription. Updates for the major version you buy",
           "icon": "spark"
         },
         {
@@ -51,7 +51,7 @@
         },
         {
           "type": "text",
-          "text": "Free desktop demo: 1 Spleeter 2-stem split",
+          "text": "Free Windows demo: unlimited Spleeter 2-stem splits, first 3 minutes, MP3, one file at a time",
           "icon": "media"
         }
       ],
@@ -89,7 +89,7 @@
       "photoCredit": "Real screenshot · stems ready, with waveforms, transport and stem controls.",
       "headline": "Queue the whole album.",
       "lede": "Batch processing with an unlimited queue. Load the tracks and let it run overnight.",
-      "body": "Each stem gets a waveform, transport and its own controls as soon as the split finishes. Import straight from YouTube, and turn separated vocals into text with **Whisper transcription** for lyrics, captions and timestamped notes.",
+      "body": "Each stem gets a waveform, transport and its own controls as soon as the split finishes. In the Windows app you can paste a YouTube URL to import the audio locally, then start the split yourself — it does not auto-split. Pro can import MP3 128/192/320, WAV, FLAC, video up to 4K, and playlists of up to 25 videos. The free demo imports MP3 192 (the first video from a playlist). Turn separated vocals into text with **Whisper transcription** for lyrics, captions and timestamped notes.",
       "images": [
         {
           "src": "assets/pages/liminal-pro/03-after-split.webp",
@@ -105,7 +105,7 @@
         },
         {
           "type": "text",
-          "text": "YouTube import",
+          "text": "YouTube import in the Windows app (audio first, then you split)",
           "icon": "media"
         },
         {
@@ -119,8 +119,8 @@
       "id": "section-fx",
       "photoCredit": "Real screenshot · the per-stem Pro FX rack.",
       "headline": "Shape every stem in the FX rack.",
-      "lede": "18 FX modules per stem, built in. Go from split to finished stems in one app.",
-      "body": "EQ, compressor, reverb, delay, saturation, stereo widener, pitch shifter and more, applied to each stem on its own. Ships with 20+ FX presets.",
+      "lede": "14 FX modules per stem, built in. Go from split to finished stems in one app.",
+      "body": "EQ, compressor, reverb, delay, saturation, stereo widener, pitch shifter and more, applied to each stem on its own. Ships with 15 FX presets. Full FX apply is Pro; the free demo gives a 5-second preview.",
       "images": [
         {
           "src": "assets/pages/liminal-pro/04-fx-menu.webp",
@@ -133,8 +133,8 @@
     {
       "id": "section-pricing",
       "photoCredit": "",
-      "headline": "One price. Lifetime access.",
-      "lede": "==$29 one-time.== All future updates included. No subscriptions and no recurring fees. Backed by a **30-day money-back guarantee**.",
+      "headline": "One price. One-time license.",
+      "lede": "==$29 one-time.== Includes the updates we publish for the major version you buy. No subscriptions and no recurring fees. Backed by a **30-day money-back guarantee**.",
       "body": "### System requirements\n- Windows 10 or later (macOS and Linux coming soon)\n- 8 GB RAM, or 16 GB for large batches\n- NVIDIA GPU with 4 GB+ VRAM for the fastest processing; CPU-only works but is slower\n\n### Installing\nWindows may show a SmartScreen notice for new independent software: choose **More info → Run anyway**, and check the SHA-256 checksum published with the installer.\n\n### 30-day money-back guarantee\nIf Liminal Pro isn't right for you, email within 30 days of purchase with the address you used at checkout for a full refund.",
       "images": [],
       "bullets": [
@@ -145,7 +145,7 @@
         },
         {
           "type": "text",
-          "text": "Lifetime license, free updates",
+          "text": "Updates for the major version you buy",
           "icon": "spark"
         }
       ],
