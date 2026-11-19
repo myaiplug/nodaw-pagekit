@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "title": "Liminal Pro — local AI stem separation for Windows · $29 one-time",
+  "title": "Liminal Pro \u2014 local AI stem separation for Windows \u00b7 $29 one-time",
   "description": "Liminal Pro separates vocals, drums, bass, piano, guitar and other on your own Windows PC. Five AI engines, up to six stems, batch processing, a 14-module FX rack per stem. $29 one-time.",
   "meta": {
     "robots": "index,follow",
-    "brand": "NoDAW™ Labs · Liminal",
+    "brand": "NoDAW\u2122 Labs \u00b7 Liminal",
     "brandHref": "https://liminal-stemsplit.onrender.com",
-    "ogImage": "https://nodaw-pagekit.vercel.app/assets/pages/liminal-pro/og-hero.jpg",
+    "ogImage": "https://nodaw-pagekit.vercel.app/assets/pages/liminal-pro/og-hero-mark.jpg",
     "sources": [
       "https://liminal-stemsplit.onrender.com (live site, read 2026-10-08)",
       "https://nodaw.gumroad.com/l/LiminalPro (Pro, $29 one-time)",
@@ -17,19 +17,19 @@
     "siteName": "NoDAW Labs",
     "ogImageWidth": "1200",
     "ogImageHeight": "630",
-    "ogImageAlt": "Liminal Pro: local stem separation for Windows, $29 once. Real app screenshot with stems ready after a split."
+    "ogImageAlt": "Liminal wordmark: local stem separation for Windows, $29 once."
   },
   "sections": [
     {
       "id": "section-hero",
-      "photoCredit": "Real screenshot · track loaded, before the split (Windows app).",
+      "photoCredit": "Liminal brand mark.",
       "headline": "Isolate any stem. On your own PC.",
       "lede": "**Liminal Pro** separates vocals, drums, bass, piano, guitar and other, locally on Windows. ==$29 one-time.== No subscription. No uploads.",
       "body": "Drop in a WAV, MP3 or FLAC, pick your engine and stem count, and split. The desktop app runs the AI models on your own GPU or CPU, so your audio never leaves your machine.",
       "images": [
         {
-          "src": "assets/pages/liminal-pro/01-app-loaded.webp",
-          "alt": "Liminal StemSplit desktop app with a track loaded, before the split",
+          "src": "assets/pages/liminal-pro/liminal-pro-hero-mark.webp",
+          "alt": "Liminal logo and wordmark",
           "format": "wide"
         }
       ],
@@ -57,7 +57,7 @@
       ],
       "actions": [
         {
-          "label": "Buy Liminal Pro — $29",
+          "label": "Buy Liminal Pro \u2014 $29",
           "href": "https://nodaw.gumroad.com/l/LiminalPro",
           "style": "primary"
         },
@@ -65,13 +65,13 @@
           "label": "Get the free demo",
           "href": "https://nodaw.gumroad.com/l/Liminal",
           "style": "secondary",
-          "note": "Secure checkout via Gumroad · instant download · 30-day money-back guarantee"
+          "note": "Secure checkout via Gumroad \u00b7 instant download \u00b7 30-day money-back guarantee"
         }
       ]
     },
     {
       "id": "section-engines",
-      "photoCredit": "Real screenshot · AI separation in progress.",
+      "photoCredit": "Real screenshot \u00b7 AI separation in progress.",
       "headline": "Five engines. Up to six stems.",
       "lede": "Demucs, MDX, Roformer, Spleeter and DrumSep. Choose the model and the stem count before you split.",
       "body": "### What comes out\n- Vocals, drums, bass, piano, guitar and other\n- 4 to 6 stems per track\n- GPU acceleration, plus a CPU-only mode that works but is slower",
@@ -86,10 +86,10 @@
     },
     {
       "id": "section-batch",
-      "photoCredit": "Real screenshot · stems ready, with waveforms, transport and stem controls.",
+      "photoCredit": "Real screenshot \u00b7 stems ready, with waveforms, transport and stem controls.",
       "headline": "Queue the whole album.",
       "lede": "Batch processing with an unlimited queue. Load the tracks and let it run overnight.",
-      "body": "Each stem gets a waveform, transport and its own controls as soon as the split finishes. In the Windows app you can paste a YouTube URL to import the audio locally, then start the split yourself — it does not auto-split. Pro can import MP3 128/192/320, WAV, FLAC, video up to 4K, and playlists of up to 25 videos. The free demo imports MP3 192 (the first video from a playlist). Turn separated vocals into text with **Whisper transcription** for lyrics, captions and timestamped notes.",
+      "body": "Each stem gets a waveform, transport and its own controls as soon as the split finishes. In the Windows app you can paste a YouTube URL to import the audio locally, then start the split yourself \u2014 it does not auto-split. Pro can import MP3 128/192/320, WAV, FLAC, video up to 4K, and playlists of up to 25 videos. The free demo imports MP3 192 (the first video from a playlist). Turn separated vocals into text with **Whisper transcription** for lyrics, captions and timestamped notes.",
       "images": [
         {
           "src": "assets/pages/liminal-pro/03-after-split.webp",
@@ -117,7 +117,7 @@
     },
     {
       "id": "section-fx",
-      "photoCredit": "Real screenshot · the per-stem Pro FX rack.",
+      "photoCredit": "Real screenshot \u00b7 the per-stem Pro FX rack.",
       "headline": "Shape every stem in the FX rack.",
       "lede": "14 FX modules per stem, built in. Go from split to finished stems in one app.",
       "body": "EQ, compressor, reverb, delay, saturation, stereo widener, pitch shifter and more, applied to each stem on its own. Ships with 15 FX presets. Full FX apply is Pro; the free demo gives a 5-second preview.",
@@ -135,7 +135,7 @@
       "photoCredit": "",
       "headline": "One price. One-time license.",
       "lede": "==$29 one-time.== Includes the updates we publish for the major version you buy. No subscriptions and no recurring fees. Backed by a **30-day money-back guarantee**.",
-      "body": "### System requirements\n- Windows 10 or later (macOS and Linux coming soon)\n- 8 GB RAM, or 16 GB for large batches\n- NVIDIA GPU with 4 GB+ VRAM for the fastest processing; CPU-only works but is slower\n\n### Installing\nWindows may show a SmartScreen notice for new independent software: choose **More info → Run anyway**, and check the SHA-256 checksum published with the installer.\n\n### 30-day money-back guarantee\nIf Liminal Pro isn't right for you, email within 30 days of purchase with the address you used at checkout for a full refund.",
+      "body": "### System requirements\n- Windows 10 or later (macOS and Linux coming soon)\n- 8 GB RAM, or 16 GB for large batches\n- NVIDIA GPU with 4 GB+ VRAM for the fastest processing; CPU-only works but is slower\n\n### Installing\nWindows may show a SmartScreen notice for new independent software: choose **More info \u2192 Run anyway**, and check the SHA-256 checksum published with the installer.\n\n### 30-day money-back guarantee\nIf Liminal Pro isn't right for you, email within 30 days of purchase with the address you used at checkout for a full refund.",
       "images": [],
       "bullets": [
         {
@@ -151,7 +151,7 @@
       ],
       "actions": [
         {
-          "label": "Buy Liminal Pro — $29",
+          "label": "Buy Liminal Pro \u2014 $29",
           "href": "https://nodaw.gumroad.com/l/LiminalPro",
           "style": "primary"
         },
@@ -159,7 +159,7 @@
           "label": "Try the free demo first",
           "href": "https://nodaw.gumroad.com/l/Liminal",
           "style": "secondary",
-          "note": "Secure checkout via Gumroad · 30-day money-back guarantee · refunds: NoDAW@nodawlabs.com"
+          "note": "Secure checkout via Gumroad \u00b7 30-day money-back guarantee \u00b7 refunds: NoDAW@nodawlabs.com"
         },
         {
           "label": "Refund policy",
